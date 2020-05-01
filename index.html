@@ -6,6 +6,7 @@
     <title>Евгений Полонский</title>
     <link rel="stylesheet" href="src/css/normolize.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
 </head>
@@ -26,12 +27,12 @@
             </nav>
             <div class="hero">
                 <div class="hero-content">
-                    <h2 class="hero-title">Фрилансер</h2>
-                    <h1 class="hero-subtitle">Евгений Полонский</h1>
-                    <p class="hero-text">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина</p>
+                    <h2 class="hero-title wow fadeInRight" data-wow-delay="0s">Фрилансер</h2>
+                    <h1 class="hero-subtitle wow fadeInLeft" data-wow-delay="0.2s">Евгений Полонский</h1>
+                    <p class="hero-text wow fadeInRight" data-wow-delay="0.5s">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина</p>
                     <button class="hero-button">Бесплатная консультация</button>
                 </div>
-                <img class="hero-img" alt="" src="src/img/hero/photo.jpg"></img>
+                <img class="hero-img wow fadeInUp" data-wow-delay="1s" alt="" src="src/img/hero/photo.jpg"></img>
             </div>
         </div>
     </header>
@@ -41,42 +42,42 @@
                 Со мной удобно работать
             </h3>
             <div class="features">
-                <div class="features-item">
+                <div class="features-item wow bounceInUp">
                     <img src="src/img/main/offer-img.svg" alt="">
                     <h3 class="features-title">По договору</h3>
                     <p class="features-text">
                         Предоставлю все документы для бухгалтерии: договоры, счета и акты. Работаю как ИП без НДС.
                     </p>
                 </div>
-                <div class="features-item">
+                <div class="features-item wow bounceInUp">
                     <img src="src/img/main/deadline-img.svg" alt="">
                     <h3 class="features-title">Точно в срок</h3>
                     <p class="features-text">
                         В договоре прописана моя  ответственность за срок проекта. Если просрочу — плачу неустойку. 
                     </p>
                 </div>
-                <div class="features-item">
+                <div class="features-item wow bounceInUp">
                     <img src="src/img/main/agreement-img.svg" alt="">
                     <h3 class="features-title">Ценник под вас</h3>
                     <p class="features-text">
                         Если у вас нетиповой проект, сделаю рассчет цены за работу и объясню, как складывается цена.
                     </p>
                 </div>
-                <div class="features-item">
+                <div class="features-item wow bounceInUp">
                     <img src="src/img/main/steps-img.svg" alt="">
                     <h3 class="features-title">Премежуточные итоги</h3>
                     <p class="features-text">
                         Показываю работу поэтапно, а не в последий момент перед крайним сроком. 
                     </p>
                 </div>
-                <div class="features-item">
+                <div class="features-item wow bounceInUp">
                     <img src="src/img/main/storage-img.svg" alt="">
                     <h3 class="features-title">Хостинг и домен </h3>
                     <p class="features-text">
                         Если мы договорились о цене проекта, в неё входит всё: домен и хостинг на год + SSL сертификат.
                     </p>
                 </div>
-                <div class="features-item">
+                <div class="features-item wow bounceInUp">
                     <img src="src/img/main/conversation-img.svg" alt="">
                     <h3 class="features-title">Не брошу после сдачи</h3>
                     <p class="features-text">
@@ -310,8 +311,10 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="src/wow.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
+        new WOW().init();
         $(function () {
         //initialize swiper when document ready
         let mySwiper = new Swiper ('.swiper-container', {
