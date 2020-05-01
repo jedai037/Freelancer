@@ -1,0 +1,314 @@
+*
+    box-sizing: border-box
+body
+    background: #20202D
+    font-family: 'Roboto', sans-serif
+img
+    max-width: 100%
+    object-fit: contain
+.container
+    max-width: 945px
+    margin: 0 auto
+.header
+    background: linear-gradient(0deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%)
+.nav
+    margin-top: 50px
+    display: flex
+    align-items: center
+    justify-content: space-between
+.logo 
+    display: flex
+    &-text 
+        margin-left: 4px
+        color: #ffffff
+.social
+    &-link
+        &:not(:last-child)
+            margin-right: 20.73px
+.title
+    margin-top: 0
+    padding-top: 64px
+    font-weight: bold
+    font-size: 36px
+    line-height: 42px
+    color: #FFFFFF
+    margin-bottom: 84px
+.hero
+    display: flex
+    justify-content: space-between
+    margin-top: 104px
+    padding-bottom: 200px
+    &-title
+        margin-bottom: 14px
+        font-size: 24px
+        line-height: 28px
+        color: #FFBB01
+        font-weight: normal
+    &-subtitle
+        font-weight: bold
+        font-size: 50px
+        line-height: 59px
+        color: #FFFFFF
+    &-text 
+        margin-top: 20px
+        margin-bottom: 38px
+        font-size: 16px
+        line-height: 28px
+        color: #FFFFFF
+        font-weight: normal
+        max-width: 420px
+    &-button 
+        background: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%)
+        box-shadow: 0px 4px 0px #B68500
+        border-radius: 5px 5px 10px 10px
+        padding: 24px 41px
+        border: none
+        outline: 0
+        cursor: pointer
+    &-img 
+        max-width: 389px
+        border-radius: 50%
+        border: 10px solid #ffffff
+.main
+    background-color: #000000
+.features
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &-item
+        flex-basis: 30%
+        margin-bottom: 63px
+    &-title
+        color: #ffffff
+        font-size: 24px
+        line-height: 28px
+    &-text 
+        color: #ffffff
+        font-size: 16px
+        line-height: 28px
+.projects
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%)
+    padding-bottom: 195px
+    &-title
+        margin-bottom: 76px
+.slider
+    &-deadline
+        background: url('../src/img/projects/time-icon.svg') no-repeat left
+    &-img
+        margin-right: 62px
+        max-width: 340px
+    &-title 
+        margin-top: 0
+        font-weight: bold
+        font-size: 24px
+        line-height: 28px
+        color: #FFFFFF
+    &-text
+        margin-top: 0
+        display: block
+        font-size: 16px
+        line-height: 150%
+        color: #FFFFFF
+    &-content
+        display: flex
+        flex-direction: column
+    &-icon
+        margin-right: 16px
+        margin-top: 20px
+    &-item
+        display: flex
+        justify-content: space-between
+        margin-right: 64px
+        align-items: start
+        &__title
+            font-weight: bold
+            font-size: 18px
+            line-height: 21px
+            color: #FFFFFF
+            margin-bottom: 7px
+    &-pluses
+        display: flex
+    &-part
+        display: flex
+        align-items: start
+        margin-right: 64px
+.project
+    &-description
+        display: block
+    &-pagination
+        margin-top: 44px
+        display: flex
+        align-items: center
+        justify-content: center
+    &-bullet
+        display: inline-block
+        width: 10px
+        height: 10px
+        border: 2px solid #ffbb01
+        border-radius: 50%
+        margin-left: 5px
+        margin-right: 5px
+        cursor: pointer
+        &__active
+            background-color: #ffbb01
+.footer
+    &-block
+        display: flex
+        justify-content: space-between
+    &-form
+        display: flex
+        flex-direction: column
+        background: #FFFFFF
+        box-shadow: -5px 5px 0px #FFC41D
+        border-radius: 5px
+        width: 380px
+        margin-bottom: 150px
+        &__title
+            margin: 0 auto
+            max-width: 285px
+            text-align: center
+            margin: 40px 47px
+            margin-bottom: 30px
+        &__input
+            padding: 18px 0 18px 50px
+            background: #F8F8F8 url('../img/footer/phone-icon.svg') no-repeat center left 20px
+            box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25)
+            border-radius: 5px
+            margin: 17px 35px
+            border: none
+    &-button 
+        background: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%)
+        box-shadow: 0px 4px 0px #B68500
+        border-radius: 5px 5px 10px 10px
+        padding: 25.5px 52px 20.5px 52px
+        margin: 26px 35px 50px 35px
+    &-contacts
+        margin-top: 40px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        max-width: 417px
+        &__item
+            margin-bottom: 53px
+    &-info
+        display: flex
+        flex-direction: column
+    &-link 
+        color: #ffffff
+        text-decoration: none
+        &__personal
+            font-size: 16px
+            line-height: 19px
+            color: #FFFFFF
+            text-decoration: none
+            &:not(:last-child)
+                margin-right: 37px
+    &-links
+        &__personal
+            display: flex
+            justify-content: space-between
+            margin-bottom: 42px
+    &-social
+        &__links
+            margin-bottom: 72px
+    &-politic
+        font-size: 15px
+        line-height: 18px
+        text-decoration-line: underline
+        color: #A5A5A5
+.input
+    &__name
+        background: #F8F8F8 url('../img/footer/user-icon.svg') no-repeat center left 20px
+.contacts
+    &-title
+        font-weight: bold
+        font-size: 24px
+        line-height: 28px
+        color: #FFFFFF
+        margin-top: 0
+
+
+
+
+
+
+@media(max-width: 980px)
+    .container
+        max-width: 700px
+    .hero
+        &-img
+            max-width: 200px
+            max-height: 200px
+    .slider
+        flex-direction: column
+    .footer
+        &-block
+            flex-direction: column
+            align-items: center
+        &-form
+            margin-bottom: 0
+    .title
+        text-align: center
+    .slider
+        &-title
+            text-align: center
+        &-img 
+            margin-right: 0
+            margin-bottom: 30px
+
+
+
+
+@media(max-width: 720px)
+    .container
+        max-width: 90%
+    .hero
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding-bottom: 0
+        &-content
+            margin-bottom: 75px
+        &-title
+            text-align: center
+        &-subtitle
+            text-align: center
+        &-text
+            text-align: center
+            margin: 0 auto
+            margin-bottom: 30px
+        &-button 
+            display: block
+            margin: 0 auto
+        &-img
+            order: -1
+            margin-bottom: 30px
+    .features
+        flex-direction: column
+        &-item
+            margin-bottom: 30px
+    .slider
+        padding-bottom: 0
+        &-item
+            flex-direction: column
+            margin-right: 0
+        &-img
+            margin: 0 auto
+            margin-bottom: 50px
+        &-text 
+            flex-basis: 100%
+        &-pluses
+            flex-direction: column
+    .footer
+        &-button 
+            margin-left: 0
+            margin-right: 0
+        &-block
+            align-items: normal
+        &-form
+            align-self: center
+        &-contacts
+            flex-direction: column
+        &-links
+            &__personal
+                flex-direction: column
